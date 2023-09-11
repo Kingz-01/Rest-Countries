@@ -21,9 +21,9 @@ const CountryDetail = ({darkmode}) => {
       setIsLoading(false);
     };
 
-    setTimeout(() => {
+    
       getData();
-    }, 3000);
+    
   }, []);
 
   return (

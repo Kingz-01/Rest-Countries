@@ -25,12 +25,8 @@ function App() {
       setIsLoading(false)
     };
     
-
-     setTimeout(() => {
-       getData();
-     }, 3000);
-    }, []);
-
+    
+    
     const filterByRegion = (region) => {
       const newCountries = allCountries.filter(
         (eachCountry) => eachCountry.region === region
@@ -50,6 +46,9 @@ function App() {
 
     };
 
+    getData();
+    
+  }, []);
   return (
     <>
       <Router>
